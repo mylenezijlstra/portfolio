@@ -110,10 +110,11 @@
               </p>
               
               <div class="about-chips">
-                <span class="chip">JavaScript</span>
+                <span class="chip">HTML</span>
                 <span class="chip">PHP</span>
-                <span class="chip">Python</span>
+                <span class="chip">JavaScript</span>
                 <span class="chip">CSS3</span>
+                <span class="chip">Python</span>
                 <span class="chip">React</span>
                 <span class="chip">MySQL</span>
               </div>
