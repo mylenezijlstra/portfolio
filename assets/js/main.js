@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinksContainer.style.top = '68px';
         navLinksContainer.style.left = '0';
         navLinksContainer.style.right = '0';
-        navLinksContainer.style.background = 'rgba(10, 15, 30, 0.95)';
+        navLinksContainer.style.background = 'rgba(253, 243, 248, 0.97)';
         navLinksContainer.style.padding = '2rem';
         navLinksContainer.style.borderBottom = '1px solid var(--border-accent)';
       } else {

@@ -49,9 +49,6 @@
       <section id="hero">
         <div class="container hero-inner">
           <div class="hero-content">
-            <div class="hero-badge">
-              <span class="dot"></span> Beschikbaar voor nieuwe opdrachten
-            </div>
             
             <h1 class="hero-title">
               <span class="role">Developer &amp; Designer</span>
@@ -73,11 +70,11 @@
             
             <div class="hero-stats">
               <div class="stat">
-                <div class="stat-num">3+</div>
+                <div class="stat-num">2</div>
                 <div class="stat-label">Jaar Ervaring</div>
               </div>
               <div class="stat">
-                <div class="stat-num">15+</div>
+                <div class="stat-num">6+</div>
                 <div class="stat-label">Projecten</div>
               </div>
               <div class="stat">
