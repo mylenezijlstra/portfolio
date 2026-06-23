@@ -205,12 +205,10 @@
                   <span class="project-type">Web Applicatie</span>
                 </div>
                 <h3 class="project-title">OSINT Profiler Tool</h3>
-                <p class="project-desc">Een geautomatiseerd dashboard voor OSINT-analisten om profielinformatie te aggregeren, analyseren en structureren.</p>
+                <p class="project-desc">A Python-based OSINT profiling tool developed for Verdieping Software, focused on gathering, analyzing, and structuring publicly available intelligence data.</p>
                 <div class="project-stack">
                   <span class="project-tag">Python</span>
-                  <span class="project-tag">Streamlit</span>
-                  <span class="project-tag">Pandas</span>
-                  <span class="project-tag">HTTPX</span>
+                  <span class="project-tag">CSS</span>
                 </div>
                 <div class="project-actions">
                   <a href="https://github.com/mylenezijlstra/python-OSINT-Profiler-VerdiepingSoftware" target="_blank" class="btn-project btn-project-secondary">
@@ -238,14 +236,14 @@
               </div>
               <div class="project-body">
                 <div class="project-meta">
-                  <span class="project-type">E-Commerce</span>
+                  <span class="project-type">demos</span>
                 </div>
-                <h3 class="project-title">Modern Webshop Platform</h3>
-                <p class="project-desc">Een volledig responsive, headless e-commerce webshop met snelle laadtijden en een clean checkout proces.</p>
+                <h3 class="project-title">demo</h3>
+                <p class="project-desc">demo</p>
                 <div class="project-stack">
-                  <span class="project-tag">JavaScript</span>
-                  <span class="project-tag">CSS Grid</span>
-                  <span class="project-tag">PHP</span>
+                  <span class="project-tag">demo</span>
+                  <span class="project-tag">demo</span>
+                  <span class="project-tag">demo</span>
                 </div>
                 <div class="project-actions">
                   <a href="#" class="btn-project btn-project-secondary">
@@ -273,14 +271,14 @@
               </div>
               <div class="project-body">
                 <div class="project-meta">
-                  <span class="project-type">UI/UX Design</span>
+                  <span class="project-type">demo</span>
                 </div>
-                <h3 class="project-title">SaaS Dashboard Mockup</h3>
-                <p class="project-desc">Minimalistisch UI concept en interactief dashboard prototype met een verfijnd kleurenpalet.</p>
+                <h3 class="project-title">demo</h3>
+                <p class="project-desc">demo</p>
                 <div class="project-stack">
-                  <span class="project-tag">Figma</span>
-                  <span class="project-tag">Interactive</span>
-                  <span class="project-tag">CSS Glow</span>
+                  <span class="project-tag">demo</span>
+                  <span class="project-tag">demo</span>
+                  <span class="project-tag">demo</span>
                 </div>
                 <div class="project-actions">
                   <a href="#" class="btn-project btn-project-secondary">

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       navbar.classList.remove('scrolled');
     }
-    
+
     // Active Link Scroll Spying
     let current = '';
     sections.forEach(section => {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Toggle class on container or simulate custom view
       hamburger.classList.toggle('active');
       navLinksContainer.classList.toggle('active');
-      
+
       // Simple CSS transition toggle for active links in style.css or direct mapping
       if (navLinksContainer.classList.contains('active')) {
         navLinksContainer.style.display = 'flex';
