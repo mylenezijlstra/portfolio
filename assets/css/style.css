@@ -612,16 +612,45 @@ section {
 .project-thumbnail .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(212,72,138,0.15);
+  background: rgba(31, 18, 53, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: var(--transition);
   font-size: 1.5rem;
-  gap: 1rem;
+  gap: 1.25rem;
+}
+.project-thumbnail .overlay a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--accent);
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
+  transform: translateY(15px);
+}
+.project-thumbnail .overlay a svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2px;
 }
 .project-card:hover .overlay { opacity: 1; }
+.project-card:hover .overlay a {
+  transform: translateY(0);
+}
+.project-thumbnail .overlay a:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: scale(1.1);
+}
 
 .project-body {
   padding: 1.5rem;
@@ -659,6 +688,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+  margin-bottom: 1.25rem;
 }
 .project-tag {
   font-size: 0.7rem;
@@ -669,6 +699,46 @@ section {
   padding: 0.15rem 0.55rem;
   border-radius: 4px;
   font-weight: 500;
+}
+.project-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+.btn-project {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  flex: 1;
+}
+.btn-project-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  color: #fff;
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+.btn-project-primary:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 16px var(--accent-glow);
+  opacity: 0.95;
+}
+.btn-project-secondary {
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-accent);
+}
+.btn-project-secondary:hover {
+  border-color: var(--accent);
+  background: rgba(212, 72, 138, 0.06);
+  transform: translateY(-1.5px);
 }
 
 /* ─── Contact Section ─── */

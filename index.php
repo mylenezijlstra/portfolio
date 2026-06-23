@@ -113,7 +113,7 @@
                 <span class="chip">HTML</span>
                 <span class="chip">PHP</span>
                 <span class="chip">JavaScript</span>
-                <span class="chip">CSS3</span>
+                <span class="chip">CSS</span>
                 <span class="chip">Python</span>
                 <span class="chip">React</span>
                 <span class="chip">MySQL</span>
@@ -192,7 +192,12 @@
               <div class="project-thumbnail">
                 <i data-lucide="cpu" style="width: 60px; height: 60px; color: var(--accent-light); opacity: 0.8;"></i>
                 <div class="overlay">
-                  <i data-lucide="external-link"></i>
+                  <a href="https://github.com/mylenezijlstra/python-OSINT-Profiler-VerdiepingSoftware" target="_blank" title="Bekijk Code op GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  </a>
+                  <a href="https://python-osint-profiler-verdiepingsoftware-uobf.onrender.com/" target="_blank" title="Bekijk Live Demo">
+                    <i data-lucide="external-link"></i>
+                  </a>
                 </div>
               </div>
               <div class="project-body">
@@ -200,11 +205,20 @@
                   <span class="project-type">Web Applicatie</span>
                 </div>
                 <h3 class="project-title">OSINT Profiler Tool</h3>
-                <p class="project-desc">Een geautomatiseerd dashboard voor OSINT-analisten om profielinformatie te aggregeren en visualiseren.</p>
+                <p class="project-desc">Een geautomatiseerd dashboard voor OSINT-analisten om profielinformatie te aggregeren, analyseren en structureren.</p>
                 <div class="project-stack">
                   <span class="project-tag">Python</span>
-                  <span class="project-tag">Tailwind</span>
-                  <span class="project-tag">API Integration</span>
+                  <span class="project-tag">Streamlit</span>
+                  <span class="project-tag">Pandas</span>
+                  <span class="project-tag">HTTPX</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/mylenezijlstra/python-OSINT-Profiler-VerdiepingSoftware" target="_blank" class="btn-project btn-project-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" style="width: 16px; height: 16px; margin-right: 2px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Code
+                  </a>
+                  <a href="https://python-osint-profiler-verdiepingsoftware-uobf.onrender.com/" target="_blank" class="btn-project btn-project-primary">
+                    <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo
+                  </a>
                 </div>
               </div>
             </div>
@@ -214,7 +228,12 @@
               <div class="project-thumbnail">
                 <i data-lucide="globe" style="width: 60px; height: 60px; color: var(--accent-2); opacity: 0.8;"></i>
                 <div class="overlay">
-                  <i data-lucide="external-link"></i>
+                  <a href="#" title="Binnenkort beschikbaar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  </a>
+                  <a href="#" title="Binnenkort beschikbaar">
+                    <i data-lucide="external-link"></i>
+                  </a>
                 </div>
               </div>
               <div class="project-body">
@@ -228,6 +247,14 @@
                   <span class="project-tag">CSS Grid</span>
                   <span class="project-tag">PHP</span>
                 </div>
+                <div class="project-actions">
+                  <a href="#" class="btn-project btn-project-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" style="width: 16px; height: 16px; margin-right: 2px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Code
+                  </a>
+                  <a href="#" class="btn-project btn-project-primary">
+                    <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -236,7 +263,12 @@
               <div class="project-thumbnail">
                 <i data-lucide="palette" style="width: 60px; height: 60px; color: var(--accent-light); opacity: 0.8;"></i>
                 <div class="overlay">
-                  <i data-lucide="external-link"></i>
+                  <a href="#" title="Binnenkort beschikbaar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  </a>
+                  <a href="#" title="Binnenkort beschikbaar">
+                    <i data-lucide="external-link"></i>
+                  </a>
                 </div>
               </div>
               <div class="project-body">
@@ -249,6 +281,14 @@
                   <span class="project-tag">Figma</span>
                   <span class="project-tag">Interactive</span>
                   <span class="project-tag">CSS Glow</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn-project btn-project-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" style="width: 16px; height: 16px; margin-right: 2px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Code
+                  </a>
+                  <a href="#" class="btn-project btn-project-primary">
+                    <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo
+                  </a>
                 </div>
               </div>
             </div>
@@ -269,9 +309,15 @@
             </a>
             
             <div class="social-links">
-              <a href="#" class="social-link" title="GitHub"><i data-lucide="github"></i></a>
-              <a href="#" class="social-link" title="LinkedIn"><i data-lucide="linkedin"></i></a>
-              <a href="#" class="social-link" title="Twitter/X"><i data-lucide="twitter"></i></a>
+              <a href="#" class="social-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+              </a>
+              <a href="#" class="social-link" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="#" class="social-link" title="Twitter/X">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+              </a>
             </div>
           </div>
         </div>
