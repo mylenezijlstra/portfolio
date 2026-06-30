@@ -212,31 +212,73 @@
               </div>
             </div>
 
-            <!-- Project 2: Demo -->
-            <div class="project-card" onclick="openModal('modal-2')" role="button" tabindex="0" aria-label="Open demo project details" data-i18n-aria-label="project_portfolio_aria">
+            <!-- Project 2: Het Utrechts Archief -->
+            <div class="project-card" onclick="openModal('modal-2')" role="button" tabindex="0" aria-label="Open details voor Het Utrechts Archief" data-i18n-aria-label="project_utrechtsarchief_aria">
+              <div class="project-thumbnail">
+                <img src="assets/img/utrechts-archief.jpg" alt="Het Utrechts Archief screenshot" data-i18n-alt="project_utrechtsarchief_alt">
+                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-type" data-i18n="project_utrechtsarchief_type">Educatief / Historisch</span>
+                </div>
+                <h3 class="project-title" data-i18n="project_utrechtsarchief_title">Het Utrechts Archief</h3>
+              </div>
+            </div>
+
+            <!-- Project 3: RemoteController -->
+            <div class="project-card" onclick="openModal('modal-3')" role="button" tabindex="0" aria-label="Open details voor RemoteController" data-i18n-aria-label="project_remote_aria">
+              <div class="project-thumbnail">
+                <img src="assets/img/remote-controller.png" alt="RemoteController screenshot" data-i18n-alt="project_remote_alt">
+                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-type" data-i18n="project_remote_type">Media / Afstandsbediening</span>
+                </div>
+                <h3 class="project-title" data-i18n="project_remote_title">RemoteController</h3>
+              </div>
+            </div>
+
+            <!-- Project 4: Kiosk Happy Herbivore -->
+            <div class="project-card" onclick="openModal('modal-4')" role="button" tabindex="0" aria-label="Open details voor Kiosk Happy Herbivore" data-i18n-aria-label="project_kiosk_aria">
+              <div class="project-thumbnail">
+                <img src="assets/img/kiosk.png" alt="Kiosk screenshot" data-i18n-alt="project_kiosk_alt">
+                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-type" data-i18n="project_kiosk_type">Touchscreen Kiosk</span>
+                </div>
+                <h3 class="project-title" data-i18n="project_kiosk_title">Kiosk Happy Herbivore</h3>
+              </div>
+            </div>
+
+            <!-- Project 5: LoveU Festival App -->
+            <div class="project-card" onclick="openModal('modal-5')" role="button" tabindex="0" aria-label="Open details voor LoveU Festival App" data-i18n-aria-label="project_festival_aria">
+              <div class="project-thumbnail">
+                <img src="assets/img/loveu-festival.png" alt="Festival App screenshot" data-i18n-alt="project_festival_alt">
+                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-type" data-i18n="project_festival_type">Progressive Web App</span>
+                </div>
+                <h3 class="project-title" data-i18n="project_festival_title">LoveU Festival App</h3>
+              </div>
+            </div>
+
+            <!-- Project 6: Portfolio Website -->
+            <div class="project-card" onclick="openModal('modal-6')" role="button" tabindex="0" aria-label="Open details voor Portfolio Website" data-i18n-aria-label="project_portfolio_aria">
               <div class="project-thumbnail project-thumbnail--gradient" style="--g1:#d4488a;--g2:#f472b6;">
                 <i data-lucide="globe" style="width:56px;height:56px;color:#fff;opacity:0.85;"></i>
                 <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
               </div>
               <div class="project-body">
                 <div class="project-meta">
-                  <span class="project-type" data-i18n="project_portfolio_type">Demo</span>
+                  <span class="project-type" data-i18n="project_portfolio_type">Web / Design</span>
                 </div>
                 <h3 class="project-title" data-i18n="project_portfolio_title">Portfolio Website</h3>
-              </div>
-            </div>
-
-            <!-- Project 3: Demo -->
-            <div class="project-card" onclick="openModal('modal-3')" role="button" tabindex="0" aria-label="Open demo project details" data-i18n-aria-label="project_taskmanager_aria">
-              <div class="project-thumbnail project-thumbnail--gradient" style="--g1:#7c3aed;--g2:#a78bfa;">
-                <i data-lucide="check-square" style="width:56px;height:56px;color:#fff;opacity:0.85;"></i>
-                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
-              </div>
-              <div class="project-body">
-                <div class="project-meta">
-                  <span class="project-type" data-i18n="project_taskmanager_type">Demo</span>
-                </div>
-                <h3 class="project-title" data-i18n="project_taskmanager_title">Task Manager App</h3>
               </div>
             </div>
 
@@ -326,17 +368,239 @@
     </div>
   </div>
 
-  <!-- Modal 2: Portfolio Website (demo) -->
+  <!-- Modal 2: Het Utrechts Archief -->
   <div class="modal-backdrop" id="modal-2" onclick="closeModalOutside(event,this)">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
       <button class="modal__close" onclick="closeModal('modal-2')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
+      <div class="modal__img">
+        <img src="assets/img/utrechts-archief.jpg" alt="Het Utrechts Archief screenshot" data-i18n-alt="project_utrechtsarchief_alt">
+      </div>
+      <div class="modal__body">
+        <div class="modal__meta"><span class="project-type" data-i18n="project_utrechtsarchief_type">Educatief / Historisch</span></div>
+        <h2 class="modal__title" id="modal-2-title" data-i18n="project_utrechtsarchief_title">Het Utrechts Archief</h2>
+        <p class="modal__desc" data-i18n="project_utrechtsarchief_desc">Een gebruiksvriendelijke webapplicatie voor het doorzoeken en bekijken van historische archiefgegevens uit Utrecht, met een overzichtelijke interface en snelle zoekfunctionaliteit.</p>
+
+        <div class="code-snapshot">
+          <div class="code-snapshot__header">
+            <div class="code-snapshot__dots"><span></span><span></span><span></span></div>
+            <span class="code-snapshot__filename">positioning.php</span>
+            <button class="code-snapshot__copy" onclick="copyCode(this)" title="Kopieer code" data-i18n-title="copy_code_title"><i data-lucide="copy" style="width:14px;height:14px;"></i></button>
+          </div>
+          <pre class="code-snapshot__body"><code><span class="kw">$pos_top</span> = <span class="fn">array_key_exists</span>(<span class="st">'desc_top'</span>, <span class="kw">$data</span>)
+    ? (<span class="tp">int</span>)<span class="kw">$data</span>[<span class="st">'desc_top'</span>]
+    : (<span class="kw">$existing</span>[<span class="st">'pos_top'</span>] ?? <span class="st">20</span>);</code></pre>
+        </div>
+
+        <div style="margin-top: 1rem; margin-bottom: 1rem; padding: 0.75rem 1rem; background: rgba(212, 72, 138, 0.08); border-radius: var(--radius-sm); border: 1.5px solid var(--border-accent); display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-primary);">
+          <i data-lucide="info" style="width:16px;height:16px;color:var(--accent);flex-shrink:0;"></i>
+          <span>
+            <strong data-i18n="modal_utrechtsarchief_login_title">Admin Panel:</strong> 
+            <span data-i18n="modal_utrechtsarchief_login_desc">Login: Admin | Wachtwoord: test123</span>
+          </span>
+        </div>
+
+        <div class="modal__tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+        </div>
+        <div class="modal__actions" style="flex-wrap: wrap; gap: 0.5rem;">
+          <a href="https://github.com/mylenezijlstra/utrechtsarchief-module6.1" target="_blank" class="btn-project btn-project-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:4px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            GitHub
+          </a>
+          <a href="https://u240381.gluwebsite.nl/utrechtsarchief/archiefbreed.php" target="_blank" class="btn-project btn-project-primary">
+            <i data-lucide="external-link" style="width:16px;height:16px;"></i> Live Demo
+          </a>
+          <a href="https://u240381.gluwebsite.nl/utrechtsarchief/admin/login.php" target="_blank" class="btn-project btn-project-primary">
+            <i data-lucide="lock" style="width:16px;height:16px;"></i> Admin Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: RemoteController -->
+  <div class="modal-backdrop" id="modal-3" onclick="closeModalOutside(event,this)">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-3-title">
+      <button class="modal__close" onclick="closeModal('modal-3')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
+      <div class="modal__img">
+        <img src="assets/img/remote-controller.png" alt="RemoteController screenshot" data-i18n-alt="project_remote_alt">
+      </div>
+      <div class="modal__body">
+        <div class="modal__meta"><span class="project-type" data-i18n="project_remote_type">Media / Afstandsbediening</span></div>
+        <h2 class="modal__title" id="modal-3-title" data-i18n="project_remote_title">RemoteController</h2>
+        <p class="modal__desc" data-i18n="project_remote_desc">A remote control application for YouTube, allowing users to easily navigate, play, and manage media from their device.</p>
+
+        <div class="code-snapshot">
+          <div class="code-snapshot__header">
+            <div class="code-snapshot__dots"><span></span><span></span><span></span></div>
+            <span class="code-snapshot__filename">server.js</span>
+            <button class="code-snapshot__copy" onclick="copyCode(this)" title="Kopieer code" data-i18n-title="copy_code_title"><i data-lucide="copy" style="width:14px;height:14px;"></i></button>
+          </div>
+          <pre class="code-snapshot__body"><code><span class="kw">io</span>.<span class="fn">on</span>(<span class="st">'connection'</span>, (<span class="kw">socket</span>) =&gt; {
+    <span class="kw">socket</span>.<span class="fn">on</span>(<span class="st">'command'</span>, (<span class="kw">data</span>) =&gt; {
+        <span class="kw">socket</span>.<span class="kw">broadcast</span>.<span class="fn">emit</span>(<span class="st">'execute'</span>, <span class="kw">data</span>);
+    });
+});</code></pre>
+        </div>
+
+        <div class="modal__tags">
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">JSON</span>
+          <span class="project-tag">CSS</span>
+        </div>
+        <div class="modal__actions" style="flex-wrap: wrap; gap: 0.5rem;">
+          <a href="https://github.com/mylenezijlstra/RemoteController" target="_blank" class="btn-project btn-project-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:4px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            GitHub
+          </a>
+          <a href="https://remotecontroller-r0oe.onrender.com/" target="_blank" class="btn-project btn-project-primary">
+            <i data-lucide="external-link" style="width:16px;height:16px;"></i> Remote Live
+          </a>
+          <a href="https://remotecontroller-r0oe.onrender.com/screen.html" target="_blank" class="btn-project btn-project-primary">
+            <i data-lucide="monitor" style="width:16px;height:16px;"></i> Screen Live
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Kiosk Happy Herbivore -->
+  <div class="modal-backdrop" id="modal-4" onclick="closeModalOutside(event,this)">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-4-title">
+      <button class="modal__close" onclick="closeModal('modal-4')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
+      <div class="modal__img">
+        <img src="assets/img/kiosk.png" alt="Kiosk screenshot" data-i18n-alt="project_kiosk_alt">
+      </div>
+      <div class="modal__body">
+        <div class="modal__meta"><span class="project-type" data-i18n="project_kiosk_type">Touchscreen Kiosk</span></div>
+        <h2 class="modal__title" id="modal-4-title" data-i18n="project_kiosk_title">Kiosk Happy Herbivore</h2>
+        <p class="modal__desc" data-i18n="project_kiosk_desc">Een interactieve touchscreen-kiosk met een overzichtelijke, meertalige interface waarmee bezoekers snel informatie, locaties en voorzieningen kunnen vinden.</p>
+
+        <div class="code-snapshot">
+          <div class="code-snapshot__header">
+            <div class="code-snapshot__dots"><span></span><span></span><span></span></div>
+            <span class="code-snapshot__filename">get_order.php</span>
+            <button class="code-snapshot__copy" onclick="copyCode(this)" title="Kopieer code" data-i18n-title="copy_code_title"><i data-lucide="copy" style="width:14px;height:14px;"></i></button>
+          </div>
+          <pre class="code-snapshot__body"><code><span class="kw">$items</span> = [];
+<span class="kw">$result</span> = <span class="kw">$conn</span>-&gt;<span class="fn">query</span>(<span class="st">"
+    SELECT p.name, op.price
+    FROM order_product op
+    JOIN products p ON op.product_id = p.product_id
+    WHERE op.order_id = $order_id
+"</span>);
+
+<span class="kw">while</span> (<span class="kw">$row</span> = <span class="kw">$result</span>-&gt;<span class="fn">fetch_assoc</span>()) {
+    <span class="kw">$items</span>[] = <span class="kw">$row</span>;
+}</code></pre>
+        </div>
+
+        <div class="modal__tags">
+          <span class="project-tag">API</span>
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+        </div>
+        <div class="modal__actions" style="flex-wrap: wrap; gap: 0.5rem;">
+          <a href="https://github.com/mylenezijlstra/kiosk" target="_blank" class="btn-project btn-project-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:4px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            GitHub
+          </a>
+          <a href="https://u240381.gluwebsite.nl/kiosk/menu.php?type=hier&lang=nl" target="_blank" class="btn-project btn-project-primary">
+            <i data-lucide="external-link" style="width:16px;height:16px;"></i> Menu Kiosk
+          </a>
+          <a href="https://u240381.gluwebsite.nl/kiosk/kitchen.php" target="_blank" class="btn-project btn-project-primary">
+            <i data-lucide="chef-hat" style="width:16px;height:16px;"></i> Kitchen View
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: LoveU Festival App -->
+  <div class="modal-backdrop" id="modal-5" onclick="closeModalOutside(event,this)">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-5-title">
+      <button class="modal__close" onclick="closeModal('modal-5')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
+      <div class="modal__img">
+        <img src="assets/img/loveu-festival.png" alt="Festival App screenshot" data-i18n-alt="project_festival_alt">
+      </div>
+      <div class="modal__body">
+        <div class="modal__meta"><span class="project-type" data-i18n="project_festival_type">Progressive Web App</span></div>
+        <h2 class="modal__title" id="modal-5-title" data-i18n="project_festival_title">LoveU Festival App</h2>
+        <p class="modal__desc" data-i18n="project_festival_desc">LoveU Festival App is een moderne offline-first Progressive Web App (PWA) voor studenten in Utrecht. De app bevat een interactieve timetable, live podiumstatussen, een zoom- en sleepbare festivalkaart, favorieten en volledige offline ondersteuning voor de ultieme festivalervaring.</p>
+
+        <div class="code-snapshot">
+          <div class="code-snapshot__header">
+            <div class="code-snapshot__dots"><span></span><span></span><span></span></div>
+            <span class="code-snapshot__filename">qrcode.js</span>
+            <button class="code-snapshot__copy" onclick="copyCode(this)" title="Kopieer code" data-i18n-title="copy_code_title"><i data-lucide="copy" style="width:14px;height:14px;"></i></button>
+          </div>
+          <pre class="code-snapshot__body"><code><span class="kw">https</span>.<span class="fn">get</span>(<span class="kw">apiUrl</span>, (<span class="kw">res</span>) =&gt; {
+  <span class="kw">if</span> (<span class="kw">res</span>.<span class="kw">statusCode</span> !== <span class="st">200</span>) {
+    <span class="kw">console</span>.<span class="fn">error</span>(<span class="st">`Failed to generate QR code. Status code: ${res.statusCode}`</span>);
+    <span class="kw">return</span>;
+  }
+
+  <span class="kw">const</span> <span class="kw">fileStream</span> = <span class="kw">fs</span>.<span class="fn">createWriteStream</span>(<span class="kw">outputPath</span>);
+  <span class="kw">res</span>.<span class="fn">pipe</span>(<span class="kw">fileStream</span>);
+
+  <span class="kw">fileStream</span>.<span class="fn">on</span>(<span class="st">'finish'</span>, () =&gt; {
+    <span class="kw">fileStream</span>.<span class="fn">close</span>();
+    <span class="kw">console</span>.<span class="fn">log</span>(<span class="st">`Successfully saved QR code image to: ${outputPath}`</span>);
+  });
+}).<span class="fn">on</span>(<span class="st">'error'</span>, (<span class="kw">err</span>) =&gt; {
+  <span class="kw">console</span>.<span class="fn">error</span>(<span class="st">`Error requesting QR code: ${err.message}`</span>);
+});</code></pre>
+        </div>
+
+        <div class="modal__tags">
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+        </div>
+        <div class="modal__actions">
+          <a href="https://github.com/mylenezijlstra/Festival-App-8.1" target="_blank" class="btn-project btn-project-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:4px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            GitHub
+          </a>
+          <a href="https://u240381.gluwebsite.nl/loveu/" target="_blank" class="btn-project btn-project-primary">
+            <i data-lucide="external-link" style="width:16px;height:16px;"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Portfolio Website -->
+  <div class="modal-backdrop" id="modal-6" onclick="closeModalOutside(event,this)">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-6-title">
+      <button class="modal__close" onclick="closeModal('modal-6')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img modal__img--gradient" style="--g1:#d4488a;--g2:#f472b6;">
         <i data-lucide="globe" style="width:72px;height:72px;color:#fff;opacity:0.9;"></i>
       </div>
       <div class="modal__body">
         <div class="modal__meta"><span class="project-type" data-i18n="project_portfolio_meta">Demo &middot; Web</span></div>
-        <h2 class="modal__title" id="modal-2-title" data-i18n="project_portfolio_title">Portfolio Website</h2>
+        <h2 class="modal__title" id="modal-6-title" data-i18n="project_portfolio_title">Portfolio Website</h2>
         <p class="modal__desc" data-i18n="project_portfolio_desc">Een persoonlijke portfoliowebsite gebouwd met PHP, CSS en JavaScript. Volledig responsive met vloeiende animaties en een modern design systeem.</p>
+
+        <div class="code-snapshot">
+          <div class="code-snapshot__header">
+            <div class="code-snapshot__dots"><span></span><span></span><span></span></div>
+            <span class="code-snapshot__filename">theme.js</span>
+            <button class="code-snapshot__copy" onclick="copyCode(this)" title="Kopieer code" data-i18n-title="copy_code_title"><i data-lucide="copy" style="width:14px;height:14px;"></i></button>
+          </div>
+          <pre class="code-snapshot__body"><code><span class="kw">const</span> <span class="fn">updateTheme</span> = (<span class="kw">theme</span>) =&gt; {
+  <span class="kw">currentTheme</span> = <span class="kw">theme</span>;
+  <span class="kw">localStorage</span>.<span class="fn">setItem</span>(<span class="st">'portfolio-theme'</span>, <span class="kw">theme</span>);
+  <span class="kw">document</span>.<span class="kw">documentElement</span>.<span class="fn">setAttribute</span>(<span class="st">'data-theme'</span>, <span class="kw">theme</span>);
+};</code></pre>
+        </div>
+
         <div class="modal__tags">
           <span class="project-tag">HTML</span>
           <span class="project-tag">PHP</span>
@@ -344,38 +608,11 @@
           <span class="project-tag">JavaScript</span>
         </div>
         <div class="modal__actions">
-          <a href="#" class="btn-project btn-project-secondary">
+          <a href="https://github.com/mylenezijlstra/portfolio" target="_blank" class="btn-project btn-project-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:4px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
             GitHub
           </a>
-          <a href="#" class="btn-project btn-project-primary"><i data-lucide="external-link" style="width:16px;height:16px;"></i> Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3: Task Manager (demo) -->
-  <div class="modal-backdrop" id="modal-3" onclick="closeModalOutside(event,this)">
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-3-title">
-      <button class="modal__close" onclick="closeModal('modal-3')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
-      <div class="modal__img modal__img--gradient" style="--g1:#7c3aed;--g2:#a78bfa;">
-        <i data-lucide="check-square" style="width:72px;height:72px;color:#fff;opacity:0.9;"></i>
-      </div>
-      <div class="modal__body">
-        <div class="modal__meta"><span class="project-type" data-i18n="project_taskmanager_meta">Demo &middot; App</span></div>
-        <h2 class="modal__title" id="modal-3-title" data-i18n="project_taskmanager_title">Task Manager App</h2>
-        <p class="modal__desc" data-i18n="project_taskmanager_desc">Een interactieve taakbeheer applicatie met drag-and-drop functionaliteit, categorieën en voortgangsoverzichten. Gebouwd als full-stack webapplicatie.</p>
-        <div class="modal__tags">
-          <span class="project-tag">JavaScript</span>
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">MySQL</span>
-        </div>
-        <div class="modal__actions">
-          <a href="#" class="btn-project btn-project-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:4px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-            GitHub
-          </a>
-          <a href="#" class="btn-project btn-project-primary"><i data-lucide="external-link" style="width:16px;height:16px;"></i> Demo</a>
+          <a href="#" class="btn-project btn-project-primary"><i data-lucide="external-link" style="width:16px;height:16px;"></i> Live Demo</a>
         </div>
       </div>
     </div>
