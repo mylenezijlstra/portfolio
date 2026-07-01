@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
       project_portfolio_desc: "Een persoonlijke portfoliowebsite gebouwd met PHP, CSS en JavaScript. Volledig responsive met vloeiende animaties en een modern design systeem.",
       contact_tag: "Zeg hallo",
       contact_title: "Neem contact op",
-      contact_subtitle: "Heb je een leuk idee, zoek je hulp bij een project of wil je gewoon even kletsen over code? Stuur me zeker een mailtje!",
+      contact_subtitle: "Dit portfolio laat een selectie van mijn werk zien. Hoewel ik momenteel niet beschikbaar ben voor nieuwe projecten, kun je me altijd bereiken via e-mail.",
       footer_crafted: "Gemaakt met <span>&hearts;</span> en passie.",
       modal_close_aria: "Sluiten",
       copy_code_title: "Kopieer code"
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
       theme_toggle_aria: "Switch to dark mode",
       lang_toggle_aria: "Switch to Dutch",
       hero_role: "Web Developer",
-      hero_desc: "I build fast, clean, and user-friendly websites and web apps. I love sleek design and code that just works.",
+      hero_desc: "I enjoy learning new things and challenging myself by finding solutions when something doesn't work out right away. I don't give up easily and keep working until my website is completely finished and meets my own expectations.",
       hero_btn_projects: "View Projects",
       hero_btn_contact: "Get In Touch",
       hero_stat_experience: "Years Experience",
@@ -314,8 +314,8 @@ document.addEventListener('DOMContentLoaded', () => {
       project_portfolio_aria: "Open portfolio website details",
       project_portfolio_desc: "A personal portfolio website built with PHP, CSS, and JavaScript. Fully responsive with smooth animations and a modern design system.",
       contact_tag: "Say hello",
-      contact_title: "Let's collaborate!",
-      contact_subtitle: "Got an exciting project, need help building something, or just want to chat about code? Hit me up!",
+      contact_title: "Contact me",
+      contact_subtitle: "This portfolio showcases a selection of my work. While I'm not currently available for new projects, you're always welcome to reach out via email.",
       footer_crafted: "Crafted with <span>&hearts;</span> and passion.",
       modal_close_aria: "Close",
       copy_code_title: "Copy code"

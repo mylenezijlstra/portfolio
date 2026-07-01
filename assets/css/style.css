@@ -629,9 +629,40 @@ section {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: center;
+  gap: 4rem;
+  align-items: start;
 }
+
+.about-photo-small {
+  flex-shrink: 0;
+}
+
+.about-photo-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 1.75rem;
+}
+
+.about-photo-row .about-chips {
+  margin-top: 0;
+  align-content: flex-start;
+}
+
+.about-photo-small img {
+  width: 190px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius-lg);
+  display: block;
+  box-shadow: 0 6px 24px rgba(212, 72, 138, 0.2);
+  border: 2.5px solid rgba(212, 72, 138, 0.25);
+}
+
+/* legacy – no longer used */
+.about-photo, .about-photo-frame { display: none; }
+
 
 .about-chips {
   display: flex;
@@ -1073,6 +1104,10 @@ section {
   border: 1.5px solid rgba(212, 72, 138, 0.28);
   transition: var(--transition);
   margin: 1.75rem 0;
+  max-width: 100%;
+  word-break: break-all;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .contact-email:hover {
@@ -1162,7 +1197,7 @@ footer span {
 
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .nav-links {

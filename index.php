@@ -112,24 +112,31 @@
           
           <div class="about-grid" style="margin-top: 3rem;">
             <div class="about-text">
+              <div class="about-photo-row">
+                <!-- Foto -->
+                <div class="about-photo-small">
+                  <img src="assets/img/mylene.jpg" alt="Mylène Zijlstra">
+                </div>
+                <!-- Talen naast de foto -->
+                <div class="about-chips">
+                  <span class="chip">HTML</span>
+                  <span class="chip">PHP</span>
+                  <span class="chip">JavaScript</span>
+                  <span class="chip">CSS</span>
+                  <span class="chip">Python</span>
+                  <span class="chip">React</span>
+                  <span class="chip">MySQL</span>
+                </div>
+              </div>
+
               <p style="margin-bottom: 1.5rem; color: var(--text-secondary);" data-i18n="about_p1">
                 Ik ben <?php echo $age; ?> jaar oud en student op het Grafisch Lyceum Utrecht. Op dit moment zit ik in mijn 2e jaar van de opleiding Web Developer.
               </p>
               <p style="color: var(--text-secondary);" data-i18n="about_p2">
                 Van het bouwen van een stabiele backend tot het ontwerpen van een strakke interface die lekker werkt: ik vind het allemaal tof om te doen en duik graag in nieuwe technieken.
               </p>
-              
-              <div class="about-chips">
-                <span class="chip">HTML</span>
-                <span class="chip">PHP</span>
-                <span class="chip">JavaScript</span>
-                <span class="chip">CSS</span>
-                <span class="chip">Python</span>
-                <span class="chip">React</span>
-                <span class="chip">MySQL</span>
-              </div>
             </div>
-            
+
             <div class="about-quotes">
               <div class="about-card">
                 <div class="about-card-quote" data-i18n="about_quote_1">
@@ -304,8 +311,8 @@
           <p class="section-subtitle" data-i18n="contact_subtitle">Heb je een idee, een project dat je wilt realiseren, of wil je gewoon even kennismaken? Stuur me gerust een bericht!</p>
           
           <div class="contact-card">
-            <a href="mailto:info@mylenezijlstra.nl" class="contact-email">
-              <i data-lucide="mail"></i> info@mylenezijlstra.nl
+            <a href="mailto:mylenezijlstra@portfolio.nl" class="contact-email">
+              <i data-lucide="mail"></i> mylenezijlstra@portfolio.nl
             </a>
             
             <div class="social-links">
@@ -339,8 +346,7 @@
       <button class="modal__close" onclick="closeModal('modal-1')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
         <div class="slideshow">
-          <img src="assets/img/osint-profiler.png" alt="OSINT Profiler screenshot" data-i18n-alt="project_osint_alt" class="slide active">
-          <img src="assets/img/1.png" alt="OSINT Profiler screenshot 1" data-i18n-alt="project_osint_alt" class="slide">
+          <img src="assets/img/1.png" alt="OSINT Profiler screenshot 1" data-i18n-alt="project_osint_alt" class="slide active">
           <img src="assets/img/2.png" alt="OSINT Profiler screenshot 2" data-i18n-alt="project_osint_alt" class="slide">
           <img src="assets/img/3.png" alt="OSINT Profiler screenshot 3" data-i18n-alt="project_osint_alt" class="slide">
         </div>
@@ -389,8 +395,7 @@
       <button class="modal__close" onclick="closeModal('modal-2')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
         <div class="slideshow">
-          <img src="assets/img/utrechts-archief.jpg" alt="Het Utrechts Archief screenshot" data-i18n-alt="project_utrechtsarchief_alt" class="slide active">
-          <img src="assets/img/12.png" alt="Het Utrechts Archief screenshot 1" data-i18n-alt="project_utrechtsarchief_alt" class="slide">
+          <img src="assets/img/12.png" alt="Het Utrechts Archief screenshot 1" data-i18n-alt="project_utrechtsarchief_alt" class="slide active">
           <img src="assets/img/13.png" alt="Het Utrechts Archief screenshot 2" data-i18n-alt="project_utrechtsarchief_alt" class="slide">
           <img src="assets/img/14.png" alt="Het Utrechts Archief screenshot 3" data-i18n-alt="project_utrechtsarchief_alt" class="slide">
           <img src="assets/img/15.png" alt="Het Utrechts Archief screenshot 4" data-i18n-alt="project_utrechtsarchief_alt" class="slide">
@@ -448,8 +453,7 @@
       <button class="modal__close" onclick="closeModal('modal-3')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
         <div class="slideshow">
-          <img src="assets/img/remote-controller.png" alt="RemoteController screenshot" data-i18n-alt="project_remote_alt" class="slide active">
-          <img src="assets/img/7.png" alt="RemoteController screenshot 1" data-i18n-alt="project_remote_alt" class="slide">
+          <img src="assets/img/7.png" alt="RemoteController screenshot 1" data-i18n-alt="project_remote_alt" class="slide active">
           <img src="assets/img/8.png" alt="RemoteController screenshot 2" data-i18n-alt="project_remote_alt" class="slide">
         </div>
       </div>
@@ -499,8 +503,7 @@
       <button class="modal__close" onclick="closeModal('modal-4')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
         <div class="slideshow">
-          <img src="assets/img/kiosk.png" alt="Kiosk screenshot" data-i18n-alt="project_kiosk_alt" class="slide active">
-          <img src="assets/img/9.png" alt="Kiosk screenshot 1" data-i18n-alt="project_kiosk_alt" class="slide">
+          <img src="assets/img/9.png" alt="Kiosk screenshot 1" data-i18n-alt="project_kiosk_alt" class="slide active">
           <img src="assets/img/10.png" alt="Kiosk screenshot 2" data-i18n-alt="project_kiosk_alt" class="slide">
           <img src="assets/img/11.png" alt="Kiosk screenshot 3" data-i18n-alt="project_kiosk_alt" class="slide">
         </div>
@@ -558,8 +561,7 @@
       <button class="modal__close" onclick="closeModal('modal-5')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
         <div class="slideshow">
-          <img src="assets/img/loveu-festival.png" alt="Festival App screenshot" data-i18n-alt="project_festival_alt" class="slide active">
-          <img src="assets/img/4.png" alt="Festival App screenshot 1" data-i18n-alt="project_festival_alt" class="slide">
+          <img src="assets/img/4.png" alt="Festival App screenshot 1" data-i18n-alt="project_festival_alt" class="slide active">
           <img src="assets/img/5.png" alt="Festival App screenshot 2" data-i18n-alt="project_festival_alt" class="slide">
           <img src="assets/img/6.png" alt="Festival App screenshot 3" data-i18n-alt="project_festival_alt" class="slide">
         </div>
@@ -617,8 +619,7 @@
       <button class="modal__close" onclick="closeModal('modal-6')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
         <div class="slideshow">
-          <img src="assets/img/portfolio-website.png" alt="Portfolio Website screenshot" data-i18n-alt="project_portfolio_alt" class="slide active">
-          <img src="assets/img/16.png" alt="Portfolio Website screenshot 1" data-i18n-alt="project_portfolio_alt" class="slide">
+          <img src="assets/img/16.png" alt="Portfolio Website screenshot 1" data-i18n-alt="project_portfolio_alt" class="slide active">
           <img src="assets/img/17.png" alt="Portfolio Website screenshot 2" data-i18n-alt="project_portfolio_alt" class="slide">
         </div>
       </div>
