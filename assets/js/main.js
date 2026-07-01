@@ -4,7 +4,7 @@
    ============================ */
 
 /* ─── Global Functions for Modals & Code Copy ─── */
-window.openModal = function(id) {
+window.openModal = function (id) {
   const backdrop = document.getElementById(id);
   if (backdrop) {
     backdrop.classList.add('open');
@@ -12,7 +12,7 @@ window.openModal = function(id) {
   }
 };
 
-window.closeModal = function(id) {
+window.closeModal = function (id) {
   const backdrop = document.getElementById(id);
   if (backdrop) {
     backdrop.classList.remove('open');
@@ -20,31 +20,31 @@ window.closeModal = function(id) {
   }
 };
 
-window.closeModalOutside = function(event, element) {
+window.closeModalOutside = function (event, element) {
   if (event.target === element) {
     element.classList.remove('open');
     document.body.style.overflow = '';
   }
 };
 
-window.copyCode = function(button) {
+window.copyCode = function (button) {
   const codeBlock = button.closest('.code-snapshot').querySelector('.code-snapshot__body code');
   if (!codeBlock) return;
-  
+
   // Extract text to copy (removing line formatting if any)
   const textToCopy = codeBlock.innerText;
-  
+
   navigator.clipboard.writeText(textToCopy).then(() => {
     // Visual feedback
     const originalHTML = button.innerHTML;
     button.innerHTML = '<i data-lucide="check" style="width:14px;height:14px;color:#10b981;"></i>';
     button.style.pointerEvents = 'none';
-    
+
     // Re-initialize Lucide icons to render the checkmark
     if (window.lucide) {
       window.lucide.createIcons();
     }
-    
+
     setTimeout(() => {
       button.innerHTML = originalHTML;
       button.style.pointerEvents = '';
@@ -172,6 +172,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateTheme(currentTheme);
 
+  // Calculate current age dynamically based on June 14, 2008
+  const birthDate = new Date(2008, 5, 14); // June is month index 5
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
   /* ─── Translation Engine & Dictionary ─── */
   const translations = {
     nl: {
@@ -182,27 +191,27 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_contact: "Contact",
       theme_toggle_aria: "Schakel donkere modus in",
       lang_toggle_aria: "Switch naar Engels",
-      hero_role: "Developer & Designer",
-      hero_desc: "Ik creëer hoogwaardige, responsieve en esthetische webapplicaties. Focus op prestaties, uitstekend design en schone code.",
+      hero_role: "Web Developer",
+      hero_desc: "Ik vind het leuk om nieuwe dingen te leren en mezelf uit te dagen door oplossingen te zoeken als iets niet meteen lukt. Ik geef niet snel op en blijf doorwerken totdat mijn website helemaal af is en voldoet aan mijn eigen verwachtingen.",
       hero_btn_projects: "Bekijk Projecten",
       hero_btn_contact: "Neem Contact Op",
       hero_stat_experience: "Jaar Ervaring",
       hero_stat_projects: "Projecten",
       hero_stat_satisfaction: "Tevredenheid",
-      about_tag: "Wie ben ik",
-      about_title: "Gepassioneerd door web en design",
-      about_p1: "Als developer combineer ik technische functionaliteit met prachtig visueel design. Ik geloof dat software niet alleen goed moet werken, maar dat de gebruikerservaring even belangrijk is.",
-      about_p2: "Of het nu gaat om het bouwen van robuuste backends, interactieve frontends of het ontwerpen van intuïtieve user interfaces — ik pak elke uitdaging met enthousiasme aan.",
+      about_tag: "Wie ben ik?",
+      about_title: "Hey, ik ben Mylène!",
+      about_p1: "Ik ben {age} jaar oud en student op het Grafisch Lyceum Utrecht. Op dit moment zit ik in mijn 2e jaar van de opleiding Web Developer.",
+      about_p2: "Van het bouwen van een stabiele backend tot het ontwerpen van een strakke interface die lekker werkt: ik vind het allemaal tof om te doen en duik graag in nieuwe technieken.",
       about_quote: "De beste manier om de toekomst te voorspellen is door hem zelf te programmeren.",
       skills_tag: "Wat ik doe",
       skills_title: "Mijn Expertises",
-      skills_subtitle: "Een selectie van mijn vaardigheden en tools waarmee ik dagelijks werk.",
+      skills_subtitle: "De tools en talen waar ik mee werk om projecten te realiseren.",
       skills_frontend_title: "Frontend Development",
-      skills_frontend_desc: "Gebruiksvriendelijke en interactieve interfaces met moderne technologieën en strakke animaties.",
+      skills_frontend_desc: "Websites die er op elk scherm strak uitzien, met vloeiende animaties en een fijne user experience.",
       skills_backend_title: "Backend Development",
-      skills_backend_desc: "Robuuste server-side logica, RESTful API's en veilige database integraties.",
+      skills_backend_desc: "Servers en databases die snel en veilig werken, zodat de voorkant van een app altijd soepel draait.",
       skills_tooling_title: "Tooling & Scripting",
-      skills_tooling_desc: "Automatisering, scripting in Python en handige CLI-applicaties ter ondersteuning.",
+      skills_tooling_desc: "Kleine automatiseringen, scripts in Python en handige tools om het ontwikkelproces te versnellen.",
       projects_tag: "Portfolio",
       projects_title: "Uitgelichte Projecten",
       projects_subtitle: "Klik op een project om meer details te bekijken.",
@@ -240,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
       project_portfolio_desc: "Een persoonlijke portfoliowebsite gebouwd met PHP, CSS en JavaScript. Volledig responsive met vloeiende animaties en een modern design systeem.",
       contact_tag: "Zeg hallo",
       contact_title: "Laten we samenwerken!",
-      contact_subtitle: "Heb je een idee, een project dat je wilt realiseren, of wil je gewoon even kennismaken? Stuur me gerust een bericht!",
+      contact_subtitle: "Heb je een leuk idee, zoek je hulp bij een project of wil je gewoon even kletsen over code? Stuur me zeker een mailtje!",
       footer_crafted: "Gemaakt met <span>&hearts;</span> en passie.",
       modal_close_aria: "Sluiten",
       copy_code_title: "Kopieer code"
@@ -253,27 +262,27 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_contact: "Contact",
       theme_toggle_aria: "Switch to dark mode",
       lang_toggle_aria: "Switch to Dutch",
-      hero_role: "Developer & Designer",
-      hero_desc: "I create high-quality, responsive, and aesthetic web applications. Focused on performance, excellent design, and clean code.",
+      hero_role: "Web Developer",
+      hero_desc: "I build fast, clean, and user-friendly websites and web apps. I love sleek design and code that just works.",
       hero_btn_projects: "View Projects",
       hero_btn_contact: "Get In Touch",
       hero_stat_experience: "Years Experience",
       hero_stat_projects: "Projects Done",
       hero_stat_satisfaction: "Satisfaction Rate",
-      about_tag: "Who am I",
-      about_title: "Passionate about web and design",
-      about_p1: "As a developer, I combine technical functionality with beautiful visual design. I believe that software should not only work well, but that the user experience is equally important.",
-      about_p2: "Whether it is building robust backends, interactive frontends, or designing intuitive user interfaces — I tackle every challenge with enthusiasm.",
+      about_tag: "Who am I?",
+      about_title: "Hey, I'm Mylène!",
+      about_p1: "I am {age} years old and a student at Grafisch Lyceum Utrecht. Currently, I am in my second year of the Web Developer program.",
+      about_p2: "From building reliable backends to designing smooth interfaces that feel great to use: I love diving into code and learning new things along the way.",
       about_quote: "The best way to predict the future is to program it yourself.",
       skills_tag: "What I do",
       skills_title: "My Areas of Expertise",
-      skills_subtitle: "A selection of my skills and tools that I work with on a daily basis.",
+      skills_subtitle: "The tools, languages, and systems I enjoy using to bring projects to life.",
       skills_frontend_title: "Frontend Development",
-      skills_frontend_desc: "User-friendly and interactive interfaces with modern technologies and clean animations.",
+      skills_frontend_desc: "Responsive, interactive interfaces that look great on any device, complete with smooth animations.",
       skills_backend_title: "Backend Development",
-      skills_backend_desc: "Robust server-side logic, RESTful APIs, and secure database integrations.",
+      skills_backend_desc: "Fast and secure servers and databases, making sure the frontend always runs smoothly.",
       skills_tooling_title: "Tooling & Scripting",
-      skills_tooling_desc: "Automation, Python scripting, and handy CLI applications to support development.",
+      skills_tooling_desc: "Automating tasks, writing custom scripts in Python, and building CLI tools to speed up workflows.",
       projects_tag: "Portfolio",
       projects_title: "Featured Projects",
       projects_subtitle: "Click on a project to view more details.",
@@ -311,7 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
       project_portfolio_desc: "A personal portfolio website built with PHP, CSS, and JavaScript. Fully responsive with smooth animations and a modern design system.",
       contact_tag: "Say hello",
       contact_title: "Let's collaborate!",
-      contact_subtitle: "Have an idea, a project you want to realize, or just want to connect? Feel free to send me a message!",
+      contact_subtitle: "Got an exciting project, need help building something, or just want to chat about code? Hit me up!",
       footer_crafted: "Crafted with <span>&hearts;</span> and passion.",
       modal_close_aria: "Close",
       copy_code_title: "Copy code"
@@ -323,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const updateLanguage = (lang) => {
     currentLang = lang;
     localStorage.setItem('portfolio-lang', lang);
-    
+
     // Update toggle button text (displays the NEXT available language)
     const langLabel = document.querySelector('#lang-toggle .lang-label');
     if (langLabel) {
@@ -334,11 +343,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-i18n]').forEach(elem => {
       const key = elem.getAttribute('data-i18n');
       if (translations[lang][key]) {
+        let textVal = translations[lang][key];
+        if (typeof textVal === 'string') {
+          textVal = textVal.replace('{age}', age);
+        }
+
         // Elements that may contain HTML elements inside them
         if (key === 'footer_crafted' || key === 'hero_btn_projects') {
-          elem.innerHTML = translations[lang][key];
+          elem.innerHTML = textVal;
         } else {
-          elem.textContent = translations[lang][key];
+          elem.textContent = textVal;
         }
       }
     });

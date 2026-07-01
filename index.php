@@ -25,7 +25,7 @@
     
     <!-- Navbar Header -->
     <header class="navbar">
-      <a href="#" class="nav-logo">MYLÈNE.</a>
+      <a href="#" class="nav-logo">MYLÈNE</a>
       
       <ul class="nav-links">
         <li><a href="#hero" class="active" data-i18n="nav_home">Home</a></li>
@@ -108,15 +108,15 @@
       <section id="about" class="reveal">
         <div class="container">
           <div class="section-tag" data-i18n="about_tag">Wie ben ik</div>
-          <h2 class="section-title" data-i18n="about_title">Gepassioneerd door web en design</h2>
+          <h2 class="section-title" data-i18n="about_title">Gepassioneerd door web</h2>
           
           <div class="about-grid" style="margin-top: 3rem;">
             <div class="about-text">
               <p style="margin-bottom: 1.5rem; color: var(--text-secondary);" data-i18n="about_p1">
-                Als developer combineer ik technische functionaliteit met prachtig visueel design. Ik geloof dat software niet alleen goed moet werken, maar dat de gebruikerservaring even belangrijk is.
+                Ik ben <?php echo $age; ?> jaar oud en student op het Grafisch Lyceum Utrecht. Op dit moment zit ik in mijn 2e jaar van de opleiding Web Developer.
               </p>
               <p style="color: var(--text-secondary);" data-i18n="about_p2">
-                Of het nu gaat om het bouwen van robuuste backends, interactieve frontends of het ontwerpen van intuïtieve user interfaces — ik pak elke uitdaging met enthousiasme aan.
+                Van het bouwen van een stabiele backend tot het ontwerpen van een strakke interface die lekker werkt: ik vind het allemaal tof om te doen en duik graag in nieuwe technieken.
               </p>
               
               <div class="about-chips">
@@ -158,7 +158,6 @@
               <div class="skill-tags">
                 <span class="skill-tag">HTML5/CSS3</span>
                 <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Vite</span>
               </div>
             </div>
             
@@ -182,7 +181,7 @@
               <div class="skill-tags">
                 <span class="skill-tag">Python</span>
                 <span class="skill-tag">Git</span>
-                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">GitHub</span>
               </div>
             </div>
           </div>
@@ -202,7 +201,6 @@
             <div class="project-card" onclick="openModal('modal-1')" role="button" tabindex="0" aria-label="Open OSINT Profiler details" data-i18n-aria-label="project_osint_aria">
               <div class="project-thumbnail">
                 <img src="assets/img/osint-profiler.png" alt="OSINT Profiler screenshot" data-i18n-alt="project_osint_alt">
-                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
               </div>
               <div class="project-body">
                 <div class="project-meta">
@@ -212,17 +210,16 @@
               </div>
             </div>
 
-            <!-- Project 2: Het Utrechts Archief -->
-            <div class="project-card" onclick="openModal('modal-2')" role="button" tabindex="0" aria-label="Open details voor Het Utrechts Archief" data-i18n-aria-label="project_utrechtsarchief_aria">
+            <!-- Project 2: LoveU Festival App -->
+            <div class="project-card" onclick="openModal('modal-5')" role="button" tabindex="0" aria-label="Open details voor LoveU Festival App" data-i18n-aria-label="project_festival_aria">
               <div class="project-thumbnail">
-                <img src="assets/img/utrechts-archief.jpg" alt="Het Utrechts Archief screenshot" data-i18n-alt="project_utrechtsarchief_alt">
-                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
+                <img src="assets/img/loveu-festival.png" alt="Festival App screenshot" data-i18n-alt="project_festival_alt">
               </div>
               <div class="project-body">
                 <div class="project-meta">
-                  <span class="project-type" data-i18n="project_utrechtsarchief_type">Educatief / Historisch</span>
+                  <span class="project-type" data-i18n="project_festival_type">Progressive Web App</span>
                 </div>
-                <h3 class="project-title" data-i18n="project_utrechtsarchief_title">Het Utrechts Archief</h3>
+                <h3 class="project-title" data-i18n="project_festival_title">LoveU Festival App</h3>
               </div>
             </div>
 
@@ -230,7 +227,6 @@
             <div class="project-card" onclick="openModal('modal-3')" role="button" tabindex="0" aria-label="Open details voor RemoteController" data-i18n-aria-label="project_remote_aria">
               <div class="project-thumbnail">
                 <img src="assets/img/remote-controller.png" alt="RemoteController screenshot" data-i18n-alt="project_remote_alt">
-                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
               </div>
               <div class="project-body">
                 <div class="project-meta">
@@ -244,7 +240,6 @@
             <div class="project-card" onclick="openModal('modal-4')" role="button" tabindex="0" aria-label="Open details voor Kiosk Happy Herbivore" data-i18n-aria-label="project_kiosk_aria">
               <div class="project-thumbnail">
                 <img src="assets/img/kiosk.png" alt="Kiosk screenshot" data-i18n-alt="project_kiosk_alt">
-                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
               </div>
               <div class="project-body">
                 <div class="project-meta">
@@ -254,25 +249,23 @@
               </div>
             </div>
 
-            <!-- Project 5: LoveU Festival App -->
-            <div class="project-card" onclick="openModal('modal-5')" role="button" tabindex="0" aria-label="Open details voor LoveU Festival App" data-i18n-aria-label="project_festival_aria">
+               <!-- Project 5: Het Utrechts Archief -->
+            <div class="project-card" onclick="openModal('modal-2')" role="button" tabindex="0" aria-label="Open details voor Het Utrechts Archief" data-i18n-aria-label="project_utrechtsarchief_aria">
               <div class="project-thumbnail">
-                <img src="assets/img/loveu-festival.png" alt="Festival App screenshot" data-i18n-alt="project_festival_alt">
-                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
+                <img src="assets/img/utrechts-archief.jpg" alt="Het Utrechts Archief screenshot" data-i18n-alt="project_utrechtsarchief_alt">
               </div>
               <div class="project-body">
                 <div class="project-meta">
-                  <span class="project-type" data-i18n="project_festival_type">Progressive Web App</span>
+                  <span class="project-type" data-i18n="project_utrechtsarchief_type">Educatief / Historisch</span>
                 </div>
-                <h3 class="project-title" data-i18n="project_festival_title">LoveU Festival App</h3>
+                <h3 class="project-title" data-i18n="project_utrechtsarchief_title">Het Utrechts Archief</h3>
               </div>
             </div>
 
             <!-- Project 6: Portfolio Website -->
             <div class="project-card" onclick="openModal('modal-6')" role="button" tabindex="0" aria-label="Open details voor Portfolio Website" data-i18n-aria-label="project_portfolio_aria">
-              <div class="project-thumbnail project-thumbnail--gradient" style="--g1:#d4488a;--g2:#f472b6;">
-                <i data-lucide="globe" style="width:56px;height:56px;color:#fff;opacity:0.85;"></i>
-                <div class="card-hover-hint"><i data-lucide="zoom-in" style="width:28px;height:28px;"></i></div>
+              <div class="project-thumbnail">
+                <img src="assets/img/portfolio-website.png" alt="Portfolio Website screenshot" data-i18n-alt="project_portfolio_alt">
               </div>
               <div class="project-body">
                 <div class="project-meta">
@@ -580,8 +573,8 @@
   <div class="modal-backdrop" id="modal-6" onclick="closeModalOutside(event,this)">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-6-title">
       <button class="modal__close" onclick="closeModal('modal-6')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
-      <div class="modal__img modal__img--gradient" style="--g1:#d4488a;--g2:#f472b6;">
-        <i data-lucide="globe" style="width:72px;height:72px;color:#fff;opacity:0.9;"></i>
+      <div class="modal__img">
+        <img src="assets/img/portfolio-website.png" alt="Portfolio Website screenshot" data-i18n-alt="project_portfolio_alt">
       </div>
       <div class="modal__body">
         <div class="modal__meta"><span class="project-type" data-i18n="project_portfolio_meta">Demo &middot; Web</span></div>
@@ -619,6 +612,12 @@
   </div>
 
   <!-- JavaScript logic & Lucide activation -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>tivation -->
   <script src="assets/js/main.js"></script>
   <script>
     lucide.createIcons();
