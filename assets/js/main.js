@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
       about_title: "Hey, ik ben Mylène!",
       about_p1: "Ik ben {age} jaar oud en student op het Grafisch Lyceum Utrecht. Op dit moment zit ik in mijn 2e jaar van de opleiding Web Developer.",
       about_p2: "Van het bouwen van een stabiele backend tot het ontwerpen van een strakke interface die lekker werkt: ik vind het allemaal tof om te doen en duik graag in nieuwe technieken.",
-      about_quote: "De beste manier om de toekomst te voorspellen is door hem zelf te programmeren.",
+      about_quote: "Hard werkende student!",
       skills_tag: "Wat ik doe",
       skills_title: "Mijn Expertises",
       skills_subtitle: "De tools en talen waar ik mee werk om projecten te realiseren.",

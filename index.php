@@ -133,11 +133,32 @@
             <div class="about-image">
               <div class="about-card">
                 <div class="about-card-quote" data-i18n="about_quote">
-                  "De beste manier om de toekomst te voorspellen is door hem zelf te programmeren."
+                  "Hard werkende student!"
                 </div>
-                <div class="about-card-author">Mylène Zijlstra</div>
+                <div class="about-card-author">Iris Govaard <br> - Klasgenoot</div>
               </div>
             </div>
+
+<div class="about-image">
+              <div class="about-card">
+                <div class="about-card-quote" data-i18n="about_quote">
+                  "Hard werkende student!"
+                </div>
+                <div class="about-card-author">Martijn Kunstman <br> - Docent</div>
+              </div>
+            </div>
+
+            <div class="about-image">
+              <div class="about-card">
+                <div class="about-card-quote" data-i18n="about_quote">
+                  "Hard werkende student!"
+                </div>
+                <div class="about-card-author">Cecile van Erp <br> - Klant</div>
+              </div>
+            </div>
+
+
+
           </div>
         </div>
       </section>
