@@ -283,7 +283,7 @@
       <section id="contact" class="reveal">
         <div class="container contact-inner">
           <div class="section-tag" data-i18n="contact_tag">Zeg hallo</div>
-          <h2 class="section-title" data-i18n="contact_title">Laten we samenwerken!</h2>
+          <h2 class="section-title" data-i18n="contact_title">Neem contact op</h2>
           <p class="section-subtitle" data-i18n="contact_subtitle">Heb je een idee, een project dat je wilt realiseren, of wil je gewoon even kennismaken? Stuur me gerust een bericht!</p>
           
           <div class="contact-card">

@@ -1127,10 +1127,41 @@ footer span {
 
   .nav-links {
     display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: var(--bg-primary);
+    padding: 1.5rem 2rem 2rem;
+    border-bottom: 1px solid var(--border-accent);
+    gap: 0.25rem;
+    z-index: 99;
+    box-shadow: 0 8px 32px rgba(212, 72, 138, 0.12);
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 
   .hamburger {
     display: flex;
+  }
+
+  /* Animate hamburger → X */
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .hamburger span {
+    transition: transform 0.25s ease, opacity 0.2s ease;
   }
 }
 

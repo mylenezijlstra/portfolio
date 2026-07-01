@@ -95,31 +95,16 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ─── Mobile Menu Toggle ─── */
   if (hamburger) {
     hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navLinksContainer.classList.toggle('active');
-
-      if (navLinksContainer.classList.contains('active')) {
-        navLinksContainer.style.display = 'flex';
-        navLinksContainer.style.flexDirection = 'column';
-        navLinksContainer.style.position = 'absolute';
-        navLinksContainer.style.top = '68px';
-        navLinksContainer.style.left = '0';
-        navLinksContainer.style.right = '0';
-        navLinksContainer.style.background = 'var(--bg-primary)';
-        navLinksContainer.style.padding = '2rem';
-        navLinksContainer.style.borderBottom = '1px solid var(--border-accent)';
-      } else {
-        navLinksContainer.style.display = '';
-      }
+      hamburger.classList.toggle('open');
+      navLinksContainer.classList.toggle('open');
     });
   }
 
   // Close mobile menu on link click
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      navLinksContainer.classList.remove('active');
-      navLinksContainer.style.display = '';
+      hamburger.classList.remove('open');
+      navLinksContainer.classList.remove('open');
     });
   });
 
@@ -248,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
       project_portfolio_aria: "Open portfolio project details",
       project_portfolio_desc: "Een persoonlijke portfoliowebsite gebouwd met PHP, CSS en JavaScript. Volledig responsive met vloeiende animaties en een modern design systeem.",
       contact_tag: "Zeg hallo",
-      contact_title: "Laten we samenwerken!",
+      contact_title: "Neem contact op",
       contact_subtitle: "Heb je een leuk idee, zoek je hulp bij een project of wil je gewoon even kletsen over code? Stuur me zeker een mailtje!",
       footer_crafted: "Gemaakt met <span>&hearts;</span> en passie.",
       modal_close_aria: "Sluiten",
