@@ -32,7 +32,7 @@
         <li><a href="#about" data-i18n="nav_about">Over Mij</a></li>
         <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
         <li><a href="#projects" data-i18n="nav_projects">Projecten</a></li>
-        <li><a href="#contact" class="nav-cta" data-i18n="nav_contact">Contact</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
       </ul>
       
       <div class="navbar-controls">
@@ -130,30 +130,26 @@
               </div>
             </div>
             
-            <div class="about-image">
+            <div class="about-quotes">
               <div class="about-card">
-                <div class="about-card-quote" data-i18n="about_quote">
+                <div class="about-card-quote" data-i18n="about_quote_1">
                   "Hard werkende student!"
                 </div>
-                <div class="about-card-author">Iris Govaard <br> - Klasgenoot</div>
+                <div class="about-card-author" data-i18n="about_author_1">Iris Govaard <br> - Klasgenoot</div>
               </div>
-            </div>
 
-<div class="about-image">
               <div class="about-card">
-                <div class="about-card-quote" data-i18n="about_quote">
+                <div class="about-card-quote" data-i18n="about_quote_2">
                   "Hard werkende student!"
                 </div>
-                <div class="about-card-author">Martijn Kunstman <br> - Docent</div>
+                <div class="about-card-author" data-i18n="about_author_2">Martijn Kunstman <br> - Docent</div>
               </div>
-            </div>
 
-            <div class="about-image">
               <div class="about-card">
-                <div class="about-card-quote" data-i18n="about_quote">
+                <div class="about-card-quote" data-i18n="about_quote_3">
                   "Hard werkende student!"
                 </div>
-                <div class="about-card-author">Cecile van Erp <br> - Klant</div>
+                <div class="about-card-author" data-i18n="about_author_3">Cecile van Erp <br> - Klant</div>
               </div>
             </div>
 
@@ -270,7 +266,7 @@
               </div>
             </div>
 
-               <!-- Project 5: Het Utrechts Archief -->
+            <!-- Project 5: Het Utrechts Archief -->
             <div class="project-card" onclick="openModal('modal-2')" role="button" tabindex="0" aria-label="Open details voor Het Utrechts Archief" data-i18n-aria-label="project_utrechtsarchief_aria">
               <div class="project-thumbnail">
                 <img src="assets/img/utrechts-archief.jpg" alt="Het Utrechts Archief screenshot" data-i18n-alt="project_utrechtsarchief_alt">
@@ -342,7 +338,12 @@
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
       <button class="modal__close" onclick="closeModal('modal-1')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
-        <img src="assets/img/osint-profiler.png" alt="OSINT Profiler screenshot" data-i18n-alt="project_osint_alt">
+        <div class="slideshow">
+          <img src="assets/img/osint-profiler.png" alt="OSINT Profiler screenshot" data-i18n-alt="project_osint_alt" class="slide active">
+          <img src="assets/img/1.png" alt="OSINT Profiler screenshot 1" data-i18n-alt="project_osint_alt" class="slide">
+          <img src="assets/img/2.png" alt="OSINT Profiler screenshot 2" data-i18n-alt="project_osint_alt" class="slide">
+          <img src="assets/img/3.png" alt="OSINT Profiler screenshot 3" data-i18n-alt="project_osint_alt" class="slide">
+        </div>
       </div>
       <div class="modal__body">
         <div class="modal__meta"><span class="project-type" data-i18n="project_osint_type">OSINT Tool &middot; Verdieping Software</span></div>
@@ -387,7 +388,13 @@
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
       <button class="modal__close" onclick="closeModal('modal-2')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
-        <img src="assets/img/utrechts-archief.jpg" alt="Het Utrechts Archief screenshot" data-i18n-alt="project_utrechtsarchief_alt">
+        <div class="slideshow">
+          <img src="assets/img/utrechts-archief.jpg" alt="Het Utrechts Archief screenshot" data-i18n-alt="project_utrechtsarchief_alt" class="slide active">
+          <img src="assets/img/12.png" alt="Het Utrechts Archief screenshot 1" data-i18n-alt="project_utrechtsarchief_alt" class="slide">
+          <img src="assets/img/13.png" alt="Het Utrechts Archief screenshot 2" data-i18n-alt="project_utrechtsarchief_alt" class="slide">
+          <img src="assets/img/14.png" alt="Het Utrechts Archief screenshot 3" data-i18n-alt="project_utrechtsarchief_alt" class="slide">
+          <img src="assets/img/15.png" alt="Het Utrechts Archief screenshot 4" data-i18n-alt="project_utrechtsarchief_alt" class="slide">
+        </div>
       </div>
       <div class="modal__body">
         <div class="modal__meta"><span class="project-type" data-i18n="project_utrechtsarchief_type">Educatief / Historisch</span></div>
@@ -440,7 +447,11 @@
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-3-title">
       <button class="modal__close" onclick="closeModal('modal-3')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
-        <img src="assets/img/remote-controller.png" alt="RemoteController screenshot" data-i18n-alt="project_remote_alt">
+        <div class="slideshow">
+          <img src="assets/img/remote-controller.png" alt="RemoteController screenshot" data-i18n-alt="project_remote_alt" class="slide active">
+          <img src="assets/img/7.png" alt="RemoteController screenshot 1" data-i18n-alt="project_remote_alt" class="slide">
+          <img src="assets/img/8.png" alt="RemoteController screenshot 2" data-i18n-alt="project_remote_alt" class="slide">
+        </div>
       </div>
       <div class="modal__body">
         <div class="modal__meta"><span class="project-type" data-i18n="project_remote_type">Media / Afstandsbediening</span></div>
@@ -487,7 +498,12 @@
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-4-title">
       <button class="modal__close" onclick="closeModal('modal-4')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
-        <img src="assets/img/kiosk.png" alt="Kiosk screenshot" data-i18n-alt="project_kiosk_alt">
+        <div class="slideshow">
+          <img src="assets/img/kiosk.png" alt="Kiosk screenshot" data-i18n-alt="project_kiosk_alt" class="slide active">
+          <img src="assets/img/9.png" alt="Kiosk screenshot 1" data-i18n-alt="project_kiosk_alt" class="slide">
+          <img src="assets/img/10.png" alt="Kiosk screenshot 2" data-i18n-alt="project_kiosk_alt" class="slide">
+          <img src="assets/img/11.png" alt="Kiosk screenshot 3" data-i18n-alt="project_kiosk_alt" class="slide">
+        </div>
       </div>
       <div class="modal__body">
         <div class="modal__meta"><span class="project-type" data-i18n="project_kiosk_type">Touchscreen Kiosk</span></div>
@@ -541,7 +557,12 @@
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-5-title">
       <button class="modal__close" onclick="closeModal('modal-5')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
-        <img src="assets/img/loveu-festival.png" alt="Festival App screenshot" data-i18n-alt="project_festival_alt">
+        <div class="slideshow">
+          <img src="assets/img/loveu-festival.png" alt="Festival App screenshot" data-i18n-alt="project_festival_alt" class="slide active">
+          <img src="assets/img/4.png" alt="Festival App screenshot 1" data-i18n-alt="project_festival_alt" class="slide">
+          <img src="assets/img/5.png" alt="Festival App screenshot 2" data-i18n-alt="project_festival_alt" class="slide">
+          <img src="assets/img/6.png" alt="Festival App screenshot 3" data-i18n-alt="project_festival_alt" class="slide">
+        </div>
       </div>
       <div class="modal__body">
         <div class="modal__meta"><span class="project-type" data-i18n="project_festival_type">Progressive Web App</span></div>
@@ -595,7 +616,11 @@
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-6-title">
       <button class="modal__close" onclick="closeModal('modal-6')" aria-label="Sluiten" data-i18n-aria-label="modal_close_aria"><i data-lucide="x"></i></button>
       <div class="modal__img">
-        <img src="assets/img/portfolio-website.png" alt="Portfolio Website screenshot" data-i18n-alt="project_portfolio_alt">
+        <div class="slideshow">
+          <img src="assets/img/portfolio-website.png" alt="Portfolio Website screenshot" data-i18n-alt="project_portfolio_alt" class="slide active">
+          <img src="assets/img/16.png" alt="Portfolio Website screenshot 1" data-i18n-alt="project_portfolio_alt" class="slide">
+          <img src="assets/img/17.png" alt="Portfolio Website screenshot 2" data-i18n-alt="project_portfolio_alt" class="slide">
+        </div>
       </div>
       <div class="modal__body">
         <div class="modal__meta"><span class="project-type" data-i18n="project_portfolio_meta">Demo &middot; Web</span></div>
@@ -633,12 +658,6 @@
   </div>
 
   <!-- JavaScript logic & Lucide activation -->
-  <script src="assets/js/main.js"></script>
-  <script>
-    lucide.createIcons();
-  </script>
-</body>
-</html>tivation -->
   <script src="assets/js/main.js"></script>
   <script>
     lucide.createIcons();

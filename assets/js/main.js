@@ -187,7 +187,12 @@ document.addEventListener('DOMContentLoaded', () => {
       about_title: "Hey, ik ben Mylène!",
       about_p1: "Ik ben {age} jaar oud en student op het Grafisch Lyceum Utrecht. Op dit moment zit ik in mijn 2e jaar van de opleiding Web Developer.",
       about_p2: "Van het bouwen van een stabiele backend tot het ontwerpen van een strakke interface die lekker werkt: ik vind het allemaal tof om te doen en duik graag in nieuwe technieken.",
-      about_quote: "Hard werkende student!",
+      about_quote_1: "Hard werkende student!",
+      about_author_1: "Iris Govaard <br> - Klasgenoot",
+      about_quote_2: "Hard werkende student!",
+      about_author_2: "Martijn Kunstman <br> - Docent",
+      about_quote_3: "Hard werkende student!",
+      about_author_3: "Cecile van Erp <br> - Klant",
       skills_tag: "Wat ik doe",
       skills_title: "Mijn Expertises",
       skills_subtitle: "De tools en talen waar ik mee werk om projecten te realiseren.",
@@ -258,7 +263,12 @@ document.addEventListener('DOMContentLoaded', () => {
       about_title: "Hey, I'm Mylène!",
       about_p1: "I am {age} years old and a student at Grafisch Lyceum Utrecht. Currently, I am in my second year of the Web Developer program.",
       about_p2: "From building reliable backends to designing smooth interfaces that feel great to use: I love diving into code and learning new things along the way.",
-      about_quote: "The best way to predict the future is to program it yourself.",
+      about_quote_1: "Hard working student!",
+      about_author_1: "Iris Govaard <br> - Classmate",
+      about_quote_2: "Hard working student!",
+      about_author_2: "Martijn Kunstman <br> - Teacher",
+      about_quote_3: "Hard working student!",
+      about_author_3: "Cecile van Erp <br> - Client",
       skills_tag: "What I do",
       skills_title: "My Areas of Expertise",
       skills_subtitle: "The tools, languages, and systems I enjoy using to bring projects to life.",
@@ -334,7 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Elements that may contain HTML elements inside them
-        if (key === 'footer_crafted' || key === 'hero_btn_projects') {
+        if (key === 'footer_crafted' || key === 'hero_btn_projects' || key.startsWith('about_author_')) {
           elem.innerHTML = textVal;
         } else {
           elem.textContent = textVal;
@@ -380,4 +390,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Set initial language from storage or default
   updateLanguage(currentLang);
+
+  // Initialize automatic slideshows (fade every 3 seconds)
+  const slideshows = document.querySelectorAll('.slideshow');
+  slideshows.forEach(slideshow => {
+    const slides = slideshow.querySelectorAll('.slide');
+    if (slides.length <= 1) return;
+    let currentSlide = 0;
+    setInterval(() => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 3000);
+  });
 });
